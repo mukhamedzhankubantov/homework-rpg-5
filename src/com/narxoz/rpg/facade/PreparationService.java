@@ -9,8 +9,11 @@ public class PreparationService {
         // TODO: Validate inputs and return a useful preparation summary.
         // You may also decide to initialize temporary state here.
         if (hero == null || boss == null || action == null) {
-            return "TODO: invalid preparation state";
+            return "Preparation failed: invalid hero, boss, or action.";
         }
-        return "TODO: preparation complete";
+        return "Preparation complete: hero=" + hero.getName()
+                + " (HP: " + hero.getHealth() + "), boss=" + boss.getName()
+                + " (HP: " + boss.getHealth() + "), action=" + action.getActionName()
+                + " (DMG: " + action.getDamage() + ")";
     }
 }
