@@ -20,8 +20,10 @@ public class DungeonFacade {
         // 1) preparation
         // 2) battle
         // 3) reward
-        AdventureResult result = battleService.battle(hero, boss, action);
+
         String preparationSummary = preparationService.prepare(hero, boss, action);
+
+        AdventureResult result = battleService.battle(hero, boss, action);
         result.addLine(preparationSummary);
         result.setReward(rewardService.determineReward(result));
         return result;
