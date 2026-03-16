@@ -33,9 +33,11 @@ public class Main {
         System.out.println("Base damage: " + basic.getDamage());
         System.out.println("Base effects: " + basic.getEffectSummary());
         System.out.println();
-        System.out.println("Enhanced action: " + enhanced.getActionName());
-        System.out.println("Enhanced damage: " + enhanced.getDamage());
-        System.out.println("Enhanced effects: " + enhanced.getEffectSummary());
+
+        System.out.println("Fire action: " + fireAttack.getActionName());
+        System.out.println("Fire damage: " + fireAttack.getDamage());
+        System.out.println("Fire effects: " + fireAttack.getEffectSummary());
+        System.out.println();
 
         System.out.println("Poison action: " + poisonAttack.getActionName());
         System.out.println("Poison damage: " + poisonAttack.getDamage());
